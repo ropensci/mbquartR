@@ -155,10 +155,10 @@ polygon <- function(x) {
     dplyr::mutate(bbox = purrr::map(.data[["data"]],
                                     ~sf::st_as_sfc(sf::st_bbox(.x)))) |>
     dplyr::ungroup() |>
-    tidyr::unnest(.data[["bbox"]]) |>
+    tidyr::unnest("bbox") |>
     sf::st_as_sf() |>
     dplyr::mutate(bbox = dplyr::case_when(Type != "Quarter" ~ NA,
                                               TRUE ~ bbox)) |>
-    dplyr::select(-.data[["data"]], -.data[["Type"]])
+    dplyr::select(-"data", -"Type")
 }
 

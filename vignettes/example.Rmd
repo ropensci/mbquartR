@@ -4,7 +4,7 @@ author: "Alex Koiter"
 date: "2025-02-04"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{example}
+  %\VignetteIndexEntry{Two examples of using mbquartR}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

@@ -79,7 +79,7 @@ search_coord <- function(long, lat) {
     tidyr::unnest("dist") |>
     dplyr::mutate(dist = units::set_units(.data[["dist"]], "m")) |>
     dplyr::select("point", legal = "Informal Legal Description",
-                  .data[["x"]] , .data[["y"]],
+                  "x", "y",
                   type = "Type",
                   "dist") |>
     sf::st_as_sf(coords = c("x", "y"), crs = "EPSG:3158") |>
@@ -88,7 +88,7 @@ search_coord <- function(long, lat) {
       sf::st_coordinates(.data[["geometry"]]))) |>
     tidyr::unnest("coords") |>
     sf::st_drop_geometry() |>
-    dplyr::rename("long" = .data[["X"]], "lat" = .data[["Y"]]) |>
+    dplyr::rename("long" = "X", "lat" = "Y") |>
     dplyr::left_join(tibble::tibble(long_user = long, lat_user = lat) |>
                        tibble::rowid_to_column("point"), by = "point") |>
     dplyr::select(-"point") |>
@@ -125,9 +125,9 @@ closest_centroid <- function(master_data, X, Y) {
       sf::st_coordinates(.data[["geometry"]]))) |>
     tidyr::unnest("coords") |>
     sf::st_drop_geometry() |>
-    dplyr::rename("x" = X, "y" = Y) |>
+    dplyr::rename("x" = "X", "y" = "Y") |>
     dplyr::bind_cols(X = X, Y = Y) |>
     dplyr::mutate(dist = ((X - .data[["x"]])^2 + (.data[["y"]] - Y) ^2)^0.5) |>
     dplyr::filter(.data[["dist"]] == min(.data[["dist"]])) |>
-    dplyr::select(-X, -Y)
+    dplyr::select(-"X", -"Y")
 }

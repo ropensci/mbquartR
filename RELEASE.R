@@ -1,10 +1,14 @@
 
 # Re-Build the README
 devtools::build_readme()
+devtools::document()
 
+devtools::test()
+devtools::run_examples()
+
+# Do it all!
 devtools::check()
 
-devtools::document()
 #devtools::build()
 
 # Test coverage
@@ -35,6 +39,7 @@ print(check)
 
 # pkgdown checks - BUILD PACKAGE FIRST!
 pkgdown::build_article("mbquartR")
+pkgdown::build_article("example")
 
 # Local preview in docs/ (which is gitignored)
 pkgdown::build_site()

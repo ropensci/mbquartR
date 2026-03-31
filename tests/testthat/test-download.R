@@ -1,4 +1,5 @@
 test_that("url_ok()", {
+  skip("httpstat site is down")
   skip_if_offline()
   expect_true(url_ok("httpstat.us/200"))
   expect_false(url_ok("httpstat.us/202"))

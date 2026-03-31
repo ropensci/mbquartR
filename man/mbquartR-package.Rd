@@ -48,12 +48,12 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Alex Koiter \email{koitera@brandonu.ca} (\href{https://orcid.org/0000-0002-9355-9561}{ORCID}) (Associate Professor, Department of Geography and Environment, Brandon University https://alexkoiter.ca/)
+\strong{Maintainer}: Alex Koiter \email{koitera@brandonu.ca} (\href{https://orcid.org/0000-0002-9355-9561}{ORCID}) (Associate Professor, Department of Geography and Environment, Brandon University <https://alexkoiter.ca/>)
 
 Other contributors:
 \itemize{
-  \item Emily H Markowitz (Research Fisheries Biologist, Alaska Fisheries Science Center NOAA Fisheries | U.S. Department of Commerce. https://emilyhmarkowitz.github.io/emilyhmarkowitz Emily reviewed the package for rOpenSci, see https://github.com/ropensci/software-review/issues/658) [reviewer]
-  \item Sheila M Saia (Environmental Data Scientist, Tetra Tech. https://sheilasaia.rbind.io/ Sheila reviewed the package for rOpenSci, see https://github.com/ropensci/software-review/issues/658) [reviewer]
+  \item Emily H Markowitz (Research Fisheries Biologist, Alaska Fisheries Science Center NOAA Fisheries | U.S. Department of Commerce. <https://emilyhmarkowitz.github.io/emilyhmarkowitz> Emily reviewed the package for rOpenSci, see <https://github.com/ropensci/software-review/issues/658>) [reviewer]
+  \item Sheila M Saia (Environmental Data Scientist, Tetra Tech. <https://sheilasaia.rbind.io/> Sheila reviewed the package for rOpenSci, see <https://github.com/ropensci/software-review/issues/658>) [reviewer]
 }
 
 }
