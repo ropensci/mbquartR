@@ -26,12 +26,12 @@ Source:
 [`DESCRIPTION`](https://github.com/ropensci/mbquartR/blob/main/DESCRIPTION)
 
 Koiter A (2026). *mbquartR: Finding Manitoba Quarter Sections*. R
-package version 0.1.0, <https://docs.ropensci.org/mbquartR/>.
+package version 0.1.1, <https://docs.ropensci.org/mbquartR/>.
 
     @Manual{,
       title = {mbquartR: Finding Manitoba Quarter Sections},
       author = {Alex Koiter},
       year = {2026},
-      note = {R package version 0.1.0},
+      note = {R package version 0.1.1},
       url = {https://docs.ropensci.org/mbquartR/},
     }
