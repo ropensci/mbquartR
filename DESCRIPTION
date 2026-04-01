@@ -1,6 +1,6 @@
 Package: mbquartR
 Title: Finding Manitoba Quarter Sections
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
     person("Alex", "Koiter", , "koitera@brandonu.ca", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-9355-9561", "Associate Professor, 

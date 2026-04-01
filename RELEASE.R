@@ -1,12 +1,19 @@
+# Bump version
+file.edit("DESCRIPTION")
+
+# Add changes to NEWS
+file.edit("NEWS.md")
 
 # Re-Build the README
 devtools::build_readme()
 devtools::document()
 
+#Ctrl-Shift-T
 devtools::test()
 devtools::run_examples()
 
 # Do it all!
+# Ctrl-Shift-E
 devtools::check()
 
 #devtools::build()
@@ -38,6 +45,7 @@ print(check)
 
 
 # pkgdown checks - BUILD PACKAGE FIRST!
+#Ctrl-Shift-B
 pkgdown::build_article("mbquartR")
 pkgdown::build_article("example")
 

@@ -1,3 +1,8 @@
+# mbquartR 0.1.1
+
+- Fixed testing issues
+- Fixed vignette issue
+
 # mbquartR 0.1.0
 
 - Updated README
@@ -8,4 +13,4 @@
 
 # mbquartR  0.0.0.9000
 
-- Initial CRAN submission.
+- Initial submission.

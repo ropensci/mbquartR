@@ -166,7 +166,7 @@ cache_file <- function() {
 
 cache_load <- function() {
 
-  if(!is.null(getOption("mbquartR_example")) && getOption("mbquartR_example")) {
+  if(is_example() || is_r_universe()) {
     #message("Using mini example data")
     return(mbquartR::mbquartR_example)
   } else {
@@ -177,3 +177,10 @@ cache_load <- function() {
   }
 }
 
+is_example <- function(){
+  !is.null(getOption("mbquartR_example")) && getOption("mbquartR_example")
+}
+
+is_r_universe <- function() {
+  !is.null(getOption("MY_UNIVERSE"))
+}
