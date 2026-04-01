@@ -15,7 +15,7 @@ test_that("search_legal() returns dataframe", {
 test_that ("Messages, warnings, and errors show up", {
   expect_warning(search_legal(x = c("NE-11-33-29W", "SW-20-2-1x")),
                  "One or more of the legal land descriptions could not be")
-  expect_warning(search_legal(x = "NE-2-12-12E"),
+  expect_warning(search_legal(x = "NE-22-8-1E"),
                  "One or more of the legal land descriptions has an ambiguous")
   expect_error(search_legal(x = 5), "Legal land descriptions must be text.")
   expect_error(search_legal(x = "WW-11-33-29W"),
