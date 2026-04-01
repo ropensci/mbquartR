@@ -182,5 +182,5 @@ is_example <- function(){
 }
 
 is_r_universe <- function() {
-  !is.null(getOption("MY_UNIVERSE"))
+  !is.null(Sys.getenv("MY_UNIVERSE")) && Sys.getenv("MY_UNIVERSE") != ""
 }
